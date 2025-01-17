@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Product Sans Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -5,13 +11,40 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Product Sans', sans-serif;
     background-color: white;
 }
 
 .logo {
-    margin-bottom: 20px;
+    display: flex;
+    font-size: 92px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: 'Product Sans', sans-serif;
+    margin-bottom: 30px; /* Add space below the logo */
 }
+
+.google-text {
+    color: #4285F4; /* Blue */
+}
+
+.google-text.red {
+    color: #EA4335; /* Red */
+}
+
+.google-text.yellow {
+    color: #FBBC05; /* Yellow */
+}
+
+.google-text.green {
+    color: #34A853; /* Green */
+}
+
+.google-text.tilted-e {
+    transform: rotate(-15deg); /* Tilt the letter 'e' */
+    display: inline-block; /* Ensure transform works */
+}
+
 
 .search-bar {
     display: flex;
